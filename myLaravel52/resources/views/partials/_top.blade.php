@@ -1,7 +1,4 @@
  
-<img src="smiley.gif" alt="Smiley face" height="42" width="42">
-
-
  <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
