@@ -19,3 +19,6 @@ Route::get('/main', function () {
     return view('main');
 });
 
+Route::get('/systemtrade', function () {
+    return view('systemtrade.home');
+});
