@@ -1,7 +1,8 @@
 <div class="header-cointainer">
 <div class="top-menu">
     <div id="logo">
-        <img src="http://gogojungle.co.jp/wp-content/uploads/2016/04/logo_ggj1.png" alt="Logo View">
+        <img src="img/logo_ggj_top.png" alt="Logo View">
+        
     </div>
     <div id="account">
         <ul>

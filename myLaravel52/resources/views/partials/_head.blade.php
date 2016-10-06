@@ -116,6 +116,7 @@
         .search-input {
             height: inherit;
             width: 80%;
+/*            border-right-color: white;*/
         }
         
         /*Main menu layout*/
