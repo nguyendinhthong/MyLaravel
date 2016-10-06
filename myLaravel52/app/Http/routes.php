@@ -22,3 +22,7 @@ Route::get('/main', function () {
 Route::get('/systemtrade', function () {
     return view('systemtrade.home');
 });
+
+Route::get('/samplepage', function () {
+    return view('samplepage.home');
+});

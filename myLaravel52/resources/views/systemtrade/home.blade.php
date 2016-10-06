@@ -1,6 +1,7 @@
 @extends('main')
 @section('content')
-	<h1>Content here</h1>
-	
+    <div style="height: 700px">
+        <h1>test Content here</h1>
+    </div>
 @endsection
 
