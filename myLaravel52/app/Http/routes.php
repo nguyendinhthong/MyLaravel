@@ -20,7 +20,7 @@ Route::get('/main', function () {
 });
 
 Route::get('/systemtrade', function () {
-    return view('systemtrade.home');
+    return view('systemtrade.home', ['login_status'=>1]);
 });
 
 Route::get('/samplepage', function () {

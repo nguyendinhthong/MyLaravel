@@ -2,13 +2,26 @@
 <div class="top-menu">
     <div id="logo">
         <img src="img/logo_ggj_top.png" alt="Logo View">
-        
     </div>
     <div id="account">
         <ul>
             <li><a id="user-guide" href="url">会員登録(無料)</a></li>
-            <li><a id="user-guide" href="url">ログイン</a></li>
-            <li><a>|</a></li>
+            <li><a id="user-guide" href="url">
+                <?php
+                    if (isset($login_status)) {
+                        if($login_status == 1) {
+                            echo 'ログアウト';                            
+                        }
+                        else {
+                            echo 'ログイン';
+                        }
+                    }
+                    else {
+                        echo 'ログイン';
+                    } 
+                ?>
+            </a></li>
+            <li>|</li>
             <li><a id="user-guide" href="url">ご利用ガイド</a></li>
         </ul>
     </div>
@@ -17,8 +30,28 @@
     <form class="common-search">
         <div class="search-form">
             <input type="text" class="search-input" placeholder="キーワードや商品番号から探す"/>
+            <button class="search_submit" type="submit">
+                <img class = "search_icon" src="img/search_icon.png" alt="Search Icon">
+            </button>
         </div>
     </form>
+    <div class="header_info">
+        <div class = "info_containers">
+            <div class="info_detail">
+                <div class="icon_container">
+                    <img class = "msg_icon" src="img/msg_icon.png" alt="Message Icon">
+                </div>
+                <div class="info_name">お知らせ</div>
+            </div>
+            <div class="info_detail">
+                <div class="icon_container">
+                    <img class = "msg_icon" src="img/cart_icon.png" alt="Cart Icon">
+                </div>
+                <div class="info_name">カート</div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <div class="main-menu">
     <ul id = "menu_list">

@@ -60,7 +60,6 @@
             margin-bottom: 0px;
         }
         
-        
         /*.header-cointainer layout*/
         .top-menu {
             display: flex;
@@ -75,13 +74,14 @@
         .middle-menu {
             display: flex;
             background-color: #ffffff;
-            height: auto;
+            height: 100px;
             border-bottom: 1px solid #ffffff;
             font-weight: normal;
-            padding: 10px 10px 10px 10px;
+            padding: 10px 0px 10px 10px;
             vertical-align: middle;
         }
         .main-menu {
+            display: flex;
             background-color: #f5f5f5;
             padding: 10px 10px 10px 10px;
             font-weight: normal;
@@ -94,31 +94,71 @@
             padding: 10px 2px 10px 2px
         }
         #account ul {
-                float: right;
-                padding: 1px 10px 1px 10px;
+            float: right;
+            padding: 1px 10px 1px 10px;
         }
-        #account a {
+        #account li {
             font-size: 14px;
             text-align: left;
             color: #ffffff;
             padding: 1px 10px 1px 10px;
         }
+        #account a {
+            color: inherit;
+        }
                 
         /*Middle menu layout*/
         .common-search {
-            height: 40px;
-            width: 500px;
+            height: 100%;
+            width: 80%;
+            padding: 20px 0px 20px 0px;
         }
         .search-form {
-            height: inherit;
-            width: inherit;
+            display: flex;
+            height: 100%;
+            width: 80%;
         }
         .search-input {
-            height: inherit;
-            width: 80%;
-/*            border-right-color: white;*/
+            float: left;
+            height: 100%;
+            width: 400px;
         }
-        
+        .search_submit {
+            height: 100%;
+            width: auto;
+            background-color: transparent;
+            border: none;
+            padding: 0px;
+        }
+        .search_icon {
+            height: 100%;
+        }
+        .header_info {
+            width: 20%;
+        }
+        .info_containers {
+            float: right;
+            display: flex;
+            width: 120px;
+            height: 100%;
+            padding: 15px 0px 15px 0px;
+        }
+        .info_detail {
+            display: block;
+            width: 50%;
+        }
+        .icon_container {
+            height: 80%;
+            text-align: center;
+        }
+        .msg_icon {
+            height: 100%;
+        }
+        .info_name {
+            font-family: "Meiryo UI";
+            height: 20%;
+            text-align: center;
+        }
         /*Main menu layout*/
         .main-menu  ul {
             display: flex;
@@ -141,21 +181,21 @@
             color: #ffffff;
             overflow: hidden;
         }
-            .footer-cointainer .notice .f_c{
-                float: left;
-                width: auto;
-            }
-            .footer-cointainer .notice li {
-                display: block;
-                font-family: "Meiryo UI";
-                padding: 0px 50px 0px 0px;
-            }
-            .footer-cointainer .notice a {
-                font-size: 14px;
-                text-align: left;
-                color: #ffffff;
-                padding: 1px 10px 1px 10px;
-            }
+        .footer-cointainer .notice .f_c{
+            float: left;
+            width: auto;
+        }
+        .footer-cointainer .notice li {
+            display: block;
+            font-family: "Meiryo UI";
+            padding: 0px 50px 0px 0px;
+        }
+        .footer-cointainer .notice a {
+            font-size: 14px;
+            text-align: left;
+            color: #ffffff;
+            padding: 1px 10px 1px 10px;
+        }
         
         .footer-cointainer .detail {
             color: rgb(217,217,217);
@@ -168,16 +208,15 @@
             margin: 18px 0 0 0;
             overflow: hidden;
         }
-            .footer-cointainer .agency ul {
-                position: relative;
-                float: left;
-                display: block;
-            }   
-            .footer-cointainer .agency li {
-                display: block;
-                float: left;
-            }
-        
+        .footer-cointainer .agency ul {
+            position: relative;
+            float: left;
+            display: block;
+        }   
+        .footer-cointainer .agency li {
+            display: block;
+            float: left;
+        }
         .footer-cointainer .cc {
             padding: 10px 0;
             text-align: center;
